@@ -1,0 +1,24 @@
+// HEADER
+header {
+  height: 80vh;
+  background-color: $alto;
+  @include flex-row-wrap;
+  justify-content: center;
+  justify-items: center;
+  background-image: url(../../img/header__small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  max-width: 70%;
+
+  &__btn {
+    margin: 1rem;
+  }
+}

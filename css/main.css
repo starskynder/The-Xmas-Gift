@@ -1,3 +1,16 @@
+.btn__primary {
+  background-color: #c83f11;
+  font-family: barlow, serif;
+  border: 2px solid #c83f11;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: #fff; }
+  .btn__primary:focus, .btn__primary:hover {
+    background-color: #fff;
+    color: #c83f11;
+    border-radius: 0; }
+
 *,
 *::after,
 *::before {
@@ -21,6 +34,14 @@ body {
 img {
   max-width: 100%;
   height: auto; }
+
+.heading__primary {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #c83f11; }
+  .heading__primary--accent {
+    display: block; }
+    .heading__primary--accent::before, .heading__primary--accent::after {
+      content: "-"; }
 
 [hidden] {
   display: none; }
@@ -98,3 +119,24 @@ nav {
     padding: 2rem;
     max-height: 50%;
     overflow: hidden; }
+
+header {
+  height: 80vh;
+  background-color: #d1d0d0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: center;
+  background-image: url(../../img/header__small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.header {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  max-width: 70%; }
+  .header__btn {
+    margin: 1rem; }
