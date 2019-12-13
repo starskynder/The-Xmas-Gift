@@ -1,0 +1,13 @@
+// TYPOGRAPHY
+.heading__primary {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: $tia-maria;
+
+  &--accent {
+    display: block;
+    &::before,
+    &::after {
+      content: "-";
+    }
+  }
+}
