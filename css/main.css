@@ -1,15 +1,17 @@
-.btn__primary {
+.btn__primary, .btn__primary:visited {
   background-color: #c83f11;
   font-family: barlow, serif;
   border: 2px solid #c83f11;
   padding: 0.5rem;
   border-radius: 0.5rem;
   font-size: 2rem;
-  color: #fff; }
-  .btn__primary:focus, .btn__primary:hover {
-    background-color: #fff;
-    color: #c83f11;
-    border-radius: 0; }
+  color: #fff;
+  text-decoration: none; }
+
+.btn__primary:focus, .btn__primary:hover {
+  background-color: #fff;
+  color: #c83f11;
+  border-radius: 0; }
 
 *,
 *::after,
@@ -42,6 +44,11 @@ img {
     display: block; }
     .heading__primary--accent::before, .heading__primary--accent::after {
       content: "-"; }
+
+.heading__tertiary {
+  font-family: barlow, serif;
+  background-color: #8c8655;
+  color: #fff; }
 
 [hidden] {
   display: none; }
@@ -140,3 +147,29 @@ header {
   max-width: 70%; }
   .header__btn {
     margin: 1rem; }
+
+.search__title {
+  background-image: linear-gradient(to bottom, #d1d0d0 50%, #fff 50%);
+  padding: 3rem 0; }
+
+.search__input {
+  border: 2px solid #c83f11;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 1rem;
+  width: 100%; }
+
+.search__form {
+  width: 80%;
+  margin: auto;
+  padding: 4rem 0; }
+
+.search__button {
+  width: 100%;
+  margin: 2rem 0; }
+
+.search h3 {
+  max-width: 60%;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  font-weight: normal; }
