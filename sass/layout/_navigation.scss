@@ -1,0 +1,107 @@
+// NAVIGATION
+[hidden] {
+  display: none;
+}
+
+nav {
+  background-color: $millbrook;
+  color: $white;
+  padding: 1rem;
+}
+
+.navigation {
+  &__nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__button {
+    display: block;
+    border: none;
+    position: relative;
+    background-color: transparent;
+  }
+
+  &__button--active &__icon {
+    background-color: transparent;
+  }
+
+  &__button--active &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__button--active &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__icon {
+    &,
+    &::after,
+    &::before {
+      transition: all 0.2s;
+      display: inline-block;
+      width: 4rem;
+      height: 0.5rem;
+      border-radius: 1rem;
+      background-color: $white;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+
+    &--item {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__menu {
+    transition: all 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+
+    &--active {
+      padding: 2rem;
+
+      max-height: 50%;
+      overflow: hidden;
+    }
+  }
+}
