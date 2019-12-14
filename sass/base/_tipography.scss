@@ -19,11 +19,20 @@
   text-align: center;
   margin: 2rem 0;
   width: 100%;
+
+  &--dark {
+    color: $black;
+  }
 }
 
 .heading__tertiary {
-  font-family: barlow, serif;
+  font-family: "Barlow", sans-serif;
   background-color: $clay-creek;
   color: $white;
   padding: 1.5rem;
+
+  &--dark {
+    background-color: $millbrook;
+    text-align: center;
+  }
 }
