@@ -2,7 +2,7 @@
   background-color: #c83f11;
   font-family: barlow, serif;
   border: 2px solid #c83f11;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   font-size: 2rem;
   color: #fff;
@@ -45,10 +45,19 @@ img {
     .heading__primary--accent::before, .heading__primary--accent::after {
       content: "-"; }
 
+.heading__secondary {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%; }
+
 .heading__tertiary {
   font-family: barlow, serif;
   background-color: #8c8655;
-  color: #fff; }
+  color: #fff;
+  padding: 1.5rem; }
 
 [hidden] {
   display: none; }
@@ -173,3 +182,33 @@ header {
   margin: 0 1rem;
   padding: 0.5rem;
   font-weight: normal; }
+
+.shop {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #543a2d;
+  color: #fff;
+  padding: 2rem;
+  justify-content: space-evenly; }
+  .shop__card {
+    background-color: #fff;
+    color: #000;
+    margin: 3rem 0; }
+  .shop__card-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    max-width: 30rem;
+    margin: 1.5rem;
+    align-items: center; }
+  .shop__title {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0; }
+  .shop__btn {
+    margin: 2rem auto; }
+  .shop__img {
+    display: block; }
+  .shop__text {
+    padding: 1rem;
+    margin: 2rem 0; }

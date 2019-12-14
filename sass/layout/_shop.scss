@@ -1,0 +1,42 @@
+// SHOP
+.shop {
+  @include flex-row-wrap;
+
+  background-color: $millbrook;
+  color: $white;
+  padding: 2rem;
+  justify-content: space-evenly;
+
+  &__card {
+    background-color: $white;
+    color: $black;
+    margin: 3rem 0;
+  }
+
+  &__card-content {
+    @include flex-col;
+    justify-content: space-evenly;
+    max-width: 30rem;
+    margin: 1.5rem;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  &__btn {
+    margin: 2rem auto;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__text {
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+}
