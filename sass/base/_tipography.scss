@@ -12,8 +12,18 @@
   }
 }
 
+.heading__secondary {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+
 .heading__tertiary {
   font-family: barlow, serif;
   background-color: $clay-creek;
   color: $white;
+  padding: 1.5rem;
 }
