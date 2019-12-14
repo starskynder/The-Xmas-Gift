@@ -1,0 +1,41 @@
+// DEAL
+.deal {
+  @include flex-row-wrap;
+  justify-content: space-evenly;
+  background-color: $white;
+  padding: 4rem 2rem;
+  font-family: inherit;
+
+  &__card {
+    @include flex-col;
+  }
+
+  &__box {
+    position: relative;
+    max-width: 33.3rem;
+  }
+
+  &__title {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80%;
+  }
+
+  &__content {
+    margin: 4rem auto;
+    min-width: 80%;
+  }
+
+  &__text {
+    padding: 2rem;
+    background-color: $alto;
+  }
+
+  &__btn {
+    margin: 2rem 0;
+
+    text-transform: uppercase;
+  }
+}

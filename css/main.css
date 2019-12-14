@@ -6,7 +6,9 @@
   border-radius: 0.5rem;
   font-size: 2rem;
   color: #fff;
-  text-decoration: none; }
+  display: block;
+  text-decoration: none;
+  text-align: center; }
 
 .btn__primary:focus, .btn__primary:hover {
   background-color: #fff;
@@ -52,12 +54,17 @@ img {
   text-align: center;
   margin: 2rem 0;
   width: 100%; }
+  .heading__secondary--dark {
+    color: #000; }
 
 .heading__tertiary {
-  font-family: barlow, serif;
+  font-family: "Barlow", sans-serif;
   background-color: #8c8655;
   color: #fff;
   padding: 1.5rem; }
+  .heading__tertiary--dark {
+    background-color: #543a2d;
+    text-align: center; }
 
 [hidden] {
   display: none; }
@@ -212,3 +219,32 @@ header {
   .shop__text {
     padding: 1rem;
     margin: 2rem 0; }
+
+.deal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 4rem 2rem;
+  font-family: inherit; }
+  .deal__card {
+    display: flex;
+    flex-flow: column; }
+  .deal__box {
+    position: relative;
+    max-width: 33.3rem; }
+  .deal__title {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80%; }
+  .deal__content {
+    margin: 4rem auto;
+    min-width: 80%; }
+  .deal__text {
+    padding: 2rem;
+    background-color: #d1d0d0; }
+  .deal__btn {
+    margin: 2rem 0;
+    text-transform: uppercase; }
