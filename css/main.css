@@ -248,3 +248,76 @@ header {
   .deal__btn {
     margin: 2rem 0;
     text-transform: uppercase; }
+
+.happyclients {
+  background-color: #d1d0d0;
+  padding: 4rem 0; }
+  .happyclients__box {
+    padding: 3rem 0;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+  .happyclients__content {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #c83f11;
+    border-bottom: 4px solid #c83f11;
+    position: relative;
+    box-shadow: 0 0 0 1rem #fff;
+    max-width: 90%; }
+  .happyclients__card {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem; }
+  .happyclients__img {
+    max-width: calc(15rem - 8px);
+    border-radius: 100%;
+    margin: 3rem 0;
+    box-shadow: 0 0 0 4px #543a2d, 0 0 0 8px #c83f11;
+    display: block; }
+  .happyclients__text {
+    display: block;
+    margin: 4rem 0;
+    padding: 3rem; }
+  .happyclients__text::before, .happyclients__text::after {
+    top: 0.5rem;
+    line-height: 100%;
+    font-size: 2.4rem;
+    color: #c83f11; }
+  .happyclients__text::before {
+    content: open-quote; }
+  .happyclients__text::after {
+    content: close-quote; }
+  .happyclients__dots {
+    margin: 2rem 0; }
+  .happyclients__dot {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #d1d0d0;
+    margin: 1rem; }
+  .happyclients__dot--active {
+    background-color: #c83f11; }
+  .happyclients__arrows--left, .happyclients__arrows--right {
+    font-size: 7rem;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #c83f11; }
+  .happyclients__arrows--left:focus, .happyclients__arrows--left:hover, .happyclients__arrows--right:focus, .happyclients__arrows--right:hover {
+    background-color: #d1d0d0; }
+  .happyclients__arrows--left {
+    left: 1rem;
+    top: 50%; }
+  .happyclients__arrows--right {
+    right: 1rem;
+    top: 50%; }

@@ -1,0 +1,108 @@
+// HAPPY CLIENTS
+.happyclients {
+  background-color: $alto;
+  padding: 4rem 0;
+
+  &__box {
+    padding: 3rem 0;
+    position: relative;
+    @include flex-col;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    background-color: $white;
+    @include flex-col;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid $tia-maria;
+    border-bottom: 4px solid $tia-maria;
+    position: relative;
+    box-shadow: 0 0 0 1rem $white;
+    max-width: 90%;
+  }
+
+  &__card {
+    @include flex-col;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem 2rem;
+  }
+  &__img {
+    max-width: calc(15rem - 8px);
+    border-radius: 100%;
+    margin: 3rem 0;
+    box-shadow: 0 0 0 4px $millbrook, 0 0 0 8px $tia-maria;
+    display: block;
+  }
+
+  &__text {
+    display: block;
+    margin: 4rem 0;
+    padding: 3rem;
+  }
+
+  &__text::before,
+  &__text::after {
+    top: 0.5rem;
+    line-height: 100%;
+    font-size: 2.4rem;
+    color: $tia-maria;
+  }
+
+  &__text::before {
+    content: open-quote;
+  }
+
+  &__text::after {
+    content: close-quote;
+  }
+
+  &__dots {
+    margin: 2rem 0;
+  }
+
+  &__dot {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: $white;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 4px $white, 0 0 0 8px $alto;
+    margin: 1rem;
+  }
+
+  &__dot--active {
+    background-color: $tia-maria;
+  }
+
+  &__arrows {
+    &--left,
+    &--right {
+      font-size: 7rem;
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      color: $tia-maria;
+    }
+
+    &--left:focus,
+    &--left:hover,
+    &--right:focus,
+    &--right:hover {
+      background-color: $alto;
+    }
+
+    &--left {
+      left: 1rem;
+      top: 50%;
+    }
+
+    &--right {
+      right: 1rem;
+      top: 50%;
+    }
+  }
+}
