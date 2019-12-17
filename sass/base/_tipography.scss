@@ -35,4 +35,9 @@
     background-color: $millbrook;
     text-align: center;
   }
+
+  &--transparent {
+    background-color: transparent;
+    color: $white;
+  }
 }
