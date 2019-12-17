@@ -11,14 +11,11 @@
     background-color: $white;
     color: $black;
     margin: 3rem 0;
-  }
-
-  &__card-content {
     @include flex-col;
-    justify-content: space-evenly;
+    /*  border: 8px solid $white; */
     max-width: 30rem;
     margin: 1.5rem;
-    align-items: center;
+    padding: 2rem;
   }
 
   &__title {
@@ -28,7 +25,9 @@
   }
 
   &__btn {
-    margin: 2rem auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__img {
