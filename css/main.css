@@ -328,3 +328,15 @@ header {
   .happyclients__arrows--right {
     right: 1rem;
     top: 50%; }
+
+.about {
+  background-color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  padding: 4rem 0; }
+  .about__box {
+    margin: 2rem;
+    padding: 2rem; }
+  .about__text {
+    padding: 2rem 1rem; }

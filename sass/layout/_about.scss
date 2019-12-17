@@ -1,0 +1,16 @@
+// ABOUT
+.about {
+  background-color: $white;
+  @include flex-row-wrap;
+  justify-items: center;
+  padding: 4rem 0;
+
+  &__box {
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  &__text {
+    padding: 2rem 1rem;
+  }
+}
