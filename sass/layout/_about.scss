@@ -2,7 +2,7 @@
 .about {
   background-color: $white;
   @include flex-row-wrap;
-  justify-items: center;
+  justify-content: center;
   padding: 4rem 0;
 
   &__box {
@@ -12,5 +12,8 @@
 
   &__text {
     padding: 2rem 1rem;
+    margin-top: 2rem;
+    max-width: 100rem;
+    border-left: 2px solid $tia-maria;
   }
 }

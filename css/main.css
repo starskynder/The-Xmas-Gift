@@ -15,6 +15,19 @@
   color: #c83f11;
   border-radius: 0; }
 
+.btn__submit {
+  background-color: #543a2d;
+  color: #fff;
+  border: none;
+  padding: 1rem 0;
+  font-family: inherit;
+  border: 2px solid #fff; }
+  .btn__submit:focus, .btn__submit:hover {
+    background-color: #d1d0d0;
+    color: #000;
+    border-color: #543a2d;
+    border-radius: 1rem; }
+
 *,
 *::after,
 *::before {
@@ -69,6 +82,9 @@ img {
   .heading__tertiary--dark {
     background-color: #543a2d;
     text-align: center; }
+  .heading__tertiary--transparent {
+    background-color: transparent;
+    color: #fff; }
 
 [hidden] {
   display: none; }
@@ -333,10 +349,68 @@ header {
   background-color: #fff;
   display: flex;
   flex-flow: row wrap;
-  justify-items: center;
+  justify-content: center;
   padding: 4rem 0; }
   .about__box {
     margin: 2rem;
     padding: 2rem; }
   .about__text {
-    padding: 2rem 1rem; }
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    max-width: 100rem;
+    border-left: 2px solid #c83f11; }
+
+.contact {
+  background-color: #543a2d;
+  color: #fff;
+  padding: 4rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .contact__box {
+    background-color: #c83f11;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    min-width: 28rem;
+    flex: 1; }
+  .contact__form {
+    font-family: inherit;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+  .contact__large {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+  .contact__follow {
+    flex-grow: 1;
+    flex-basis: 0; }
+  .contact__input {
+    border: none;
+    font-family: inherit;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    font-size: 2.4rem; }
+  .contact__label {
+    padding: 1rem 0; }
+  .contact__subtitle {
+    width: 100%; }
+  .contact__icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+  .contact__icon {
+    max-width: 8rem;
+    display: block;
+    margin: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem; }
+    .contact__icon:focus, .contact__icon:hover {
+      border-radius: 100%; }
+  .contact__mailing {
+    padding: 2rem; }
+  .contact__mailing-form {
+    max-width: 50rem;
+    margin: auto; }
