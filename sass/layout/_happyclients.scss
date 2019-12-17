@@ -27,9 +27,9 @@
     @include flex-col;
     justify-content: center;
     align-items: center;
-
-    padding: 4rem 2rem;
+    padding: 2rem;
   }
+
   &__img {
     max-width: calc(15rem - 8px);
     border-radius: 100%;
@@ -40,8 +40,11 @@
 
   &__text {
     display: block;
-    margin: 4rem 0;
-    padding: 3rem;
+    // margin: 4rem 0;
+    padding: 2rem;
+    max-width: 90rem;
+    height: 20rem;
+    overflow: hidden;
   }
 
   &__text::before,
