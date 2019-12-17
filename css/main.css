@@ -106,7 +106,11 @@ nav {
   align-items: center; }
 
 .navigation__logo {
-  margin-right: auto; }
+  margin-right: auto;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  align-items: center; }
 
 .navigation__button {
   display: block;
@@ -153,6 +157,8 @@ nav {
   .navigation__list-item {
     width: 100%;
     padding: 1rem; }
+    .navigation__list-item:last-of-type {
+      background-color: #c83f11; }
 
 .navigation__link {
   color: #fff;
@@ -172,6 +178,24 @@ nav {
     padding: 2rem;
     max-height: 50%;
     overflow: hidden; }
+
+.navigation__cart {
+  display: inline-block;
+  padding: 1rem;
+  border: 2px solid #c83f11;
+  border-radius: 1rem;
+  margin: 0 1rem; }
+  .navigation__cart-link {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .navigation__cart-link:visited {
+      color: #fff; }
+    .navigation__cart-link:focus, .navigation__cart-link:hover {
+      text-decoration: underline; }
+    .navigation__cart-link:active {
+      color: #d1d0d0; }
 
 header {
   height: 80vh;
