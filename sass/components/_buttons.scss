@@ -23,3 +23,20 @@
     border-radius: 0;
   }
 }
+
+.btn__submit {
+  background-color: $millbrook;
+  color: $white;
+  border: none;
+  padding: 1rem 0;
+  font-family: inherit;
+  border: 2px solid $white;
+
+  &:focus,
+  &:hover {
+    background-color: $alto;
+    color: $black;
+    border-color: $millbrook;
+    border-radius: 1rem;
+  }
+}
