@@ -1,0 +1,79 @@
+// CONTACT
+.contact {
+  background-color: $millbrook;
+  color: $white;
+  padding: 4rem 0;
+  @include flex-row-wrap;
+  justify-content: space-around;
+
+  &__box {
+    background-color: $tia-maria;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    min-width: 28rem;
+    flex: 1;
+  }
+
+  &__form {
+    font-family: inherit;
+    @include flex-col;
+
+    justify-content: center;
+  }
+
+  &__large {
+    @include flex-col;
+    justify-content: center;
+  }
+
+  &__follow {
+    flex-grow: 1;
+
+    flex-basis: 0;
+  }
+
+  &__input {
+    border: none;
+    font-family: inherit;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+  }
+
+  &__label {
+    padding: 1rem 0;
+  }
+
+  &__subtitle {
+    width: 100%;
+  }
+
+  &__icons {
+    @include flex-row-wrap;
+    justify-content: center;
+  }
+
+  &__icon {
+    max-width: 8rem;
+    display: block;
+    margin: 1rem;
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    &:focus,
+    &:hover {
+      border-radius: 100%;
+    }
+  }
+
+  &__mailing {
+    padding: 2rem;
+  }
+
+  &__mailing-form {
+    max-width: 50rem;
+    margin: auto;
+  }
+}
