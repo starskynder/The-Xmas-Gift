@@ -15,5 +15,9 @@
     margin-top: 2rem;
     max-width: 100rem;
     border-left: 2px solid $tia-maria;
+
+    &::first-letter {
+      font-weight: bold;
+    }
   }
 }
