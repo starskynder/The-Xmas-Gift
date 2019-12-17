@@ -150,14 +150,19 @@ nav {
   padding: 0;
   text-align: center;
   font-size: 2rem; }
-  .navigation__list--item {
-    width: 100%; }
+  .navigation__list-item {
+    width: 100%;
+    padding: 1rem; }
 
 .navigation__link {
   color: #fff;
   text-decoration: none; }
+  .navigation__link:visited {
+    color: #fff; }
   .navigation__link:focus, .navigation__link:hover {
     text-decoration: underline; }
+  .navigation__link:active {
+    color: #c83f11; }
 
 .navigation__menu {
   transition: all 0.3s ease-out;
