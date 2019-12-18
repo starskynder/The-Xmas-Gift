@@ -6,6 +6,10 @@
   padding: 4rem 2rem;
   font-family: inherit;
 
+  @media screen and (min-width: 79.5em) {
+    padding: 8rem 5rem;
+  }
+
   &__card {
     @include flex-col;
   }
