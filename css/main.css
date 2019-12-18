@@ -68,6 +68,12 @@ a {
     display: block; }
     .heading__primary--accent::before, .heading__primary--accent::after {
       content: "-"; }
+  @media screen and (min-width: 37.5em) {
+    .heading__primary {
+      font-size: 5rem; } }
+  @media screen and (min-width: 87.5em) {
+    .heading__primary {
+      font-size: 8rem; } }
 
 .heading__secondary {
   font-family: "Montserrat Alternates", sans-serif;
@@ -207,6 +213,10 @@ header {
   background-image: url(../../img/header__small.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+  @media screen and (min-width: 37.5em) {
+    header {
+      background-image: url(../../img/header__md.jpg);
+      background-position: center; } }
 
 .header {
   display: flex;
@@ -233,6 +243,12 @@ header {
   width: 80%;
   margin: auto;
   padding: 4rem 0; }
+  @media screen and (min-width: 43.75em) {
+    .search__form {
+      max-width: 58rem; } }
+  @media screen and (min-width: 79.5em) {
+    .search__form {
+      margin: 6rem auto 6rem auto; } }
 
 .search__button {
   width: 100%;
@@ -240,9 +256,12 @@ header {
 
 .search h3 {
   max-width: 60%;
-  margin: 0 1rem;
+  margin: 0 auto;
   padding: 0.5rem;
   font-weight: normal; }
+  @media screen and (min-width: 43.75em) {
+    .search h3 {
+      width: 40%; } }
 
 .shop {
   display: flex;
@@ -251,6 +270,9 @@ header {
   color: #fff;
   padding: 2rem;
   justify-content: space-evenly; }
+  @media screen and (min-width: 79.5em) {
+    .shop {
+      padding: 8rem 5rem; } }
   .shop__card {
     background-color: #fff;
     color: #000;
@@ -258,9 +280,15 @@ header {
     display: flex;
     flex-flow: column;
     /*  border: 8px solid $white; */
-    max-width: 30rem;
+    flex-basis: 30rem;
     margin: 1.5rem;
     padding: 2rem; }
+    @media screen and (min-width: 84.9em) {
+      .shop__card {
+        flex: 0 1 24%; } }
+    @media screen and (min-width: 137.5em) {
+      .shop__card {
+        flex: 0 0 47rem; } }
   .shop__title {
     text-align: center;
     width: 100%;
@@ -282,6 +310,9 @@ header {
   background-color: #fff;
   padding: 4rem 2rem;
   font-family: inherit; }
+  @media screen and (min-width: 79.5em) {
+    .deal {
+      padding: 8rem 5rem; } }
   .deal__card {
     display: flex;
     flex-flow: column; }
@@ -307,6 +338,9 @@ header {
 .happyclients {
   background-color: #d1d0d0;
   padding: 4rem 0; }
+  @media screen and (min-width: 79.5em) {
+    .happyclients {
+      padding: 8rem 5rem; } }
   .happyclients__box {
     padding: 3rem 0;
     position: relative;
@@ -385,6 +419,9 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   padding: 4rem 0; }
+  @media screen and (min-width: 79.5em) {
+    .about {
+      padding: 8rem 5rem; } }
   .about__box {
     margin: 2rem;
     padding: 2rem; }
@@ -402,13 +439,14 @@ header {
   padding: 4rem 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
   .contact__box {
     background-color: #c83f11;
     margin: 2rem;
     margin-bottom: 4rem;
     padding: 2rem;
     min-width: 28rem;
+    max-width: 40rem;
     flex: 1; }
   .contact__form {
     font-family: inherit;
@@ -425,9 +463,8 @@ header {
   .contact__input {
     border: none;
     font-family: inherit;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-    font-size: 2rem; }
+    padding: 0.5rem 0;
+    margin-bottom: 2rem; }
   .contact__label {
     padding: 1rem 0; }
   .contact__subtitle {

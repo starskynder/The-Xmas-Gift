@@ -4,7 +4,7 @@
   color: $white;
   padding: 4rem 0;
   @include flex-row-wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   &__box {
     background-color: $tia-maria;
@@ -12,6 +12,7 @@
     margin-bottom: 4rem;
     padding: 2rem;
     min-width: 28rem;
+    max-width: 40rem;
     flex: 1;
   }
 
@@ -36,9 +37,8 @@
   &__input {
     border: none;
     font-family: inherit;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     margin-bottom: 2rem;
-    font-size: 2rem;
   }
 
   &__label {
