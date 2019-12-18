@@ -17,6 +17,13 @@
     width: 80%;
     margin: auto;
     padding: 4rem 0;
+
+    @media screen and (min-width: 43.75em) {
+      max-width: 58rem;
+    }
+    @media screen and (min-width: 79.5em) {
+      margin: 6rem auto 6rem auto;
+    }
   }
 
   &__button {
@@ -27,7 +34,11 @@
 
 .search h3 {
   max-width: 60%;
-  margin: 0 1rem;
+  margin: 0 auto;
   padding: 0.5rem;
   font-weight: normal;
+
+  @media screen and (min-width: 43.75em) {
+    width: 40%;
+  }
 }
