@@ -5,6 +5,10 @@
   justify-content: center;
   padding: 4rem 0;
 
+  @media screen and (min-width: 79.5em) {
+    padding: 8rem 5rem;
+  }
+
   &__box {
     margin: 2rem;
     padding: 2rem;
